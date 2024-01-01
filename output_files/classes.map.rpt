@@ -1,6 +1,6 @@
 Analysis & Synthesis report for classes
-Sat Nov  4 16:28:56 2023
-Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+Thu Dec 28 11:21:32 2023
+Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
 ---------------------
@@ -23,7 +23,7 @@ Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2023  Intel Corporation. All rights reserved.
+Copyright (C) 2019  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -40,27 +40,27 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+----------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                     ;
-+---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat Nov  4 16:28:56 2023          ;
-; Quartus Prime Version           ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
-; Revision Name                   ; classes                                        ;
-; Top-level Entity Name           ; ex05                                           ;
-; Family                          ; Cyclone V                                      ;
-; Logic utilization (in ALMs)     ; N/A                                            ;
-; Total registers                 ; 0                                              ;
-; Total pins                      ; 7                                              ;
-; Total virtual pins              ; 0                                              ;
-; Total block memory bits         ; 0                                              ;
-; Total DSP Blocks                ; 0                                              ;
-; Total HSSI RX PCSs              ; 0                                              ;
-; Total HSSI PMA RX Deserializers ; 0                                              ;
-; Total HSSI TX PCSs              ; 0                                              ;
-; Total HSSI PMA TX Serializers   ; 0                                              ;
-; Total PLLs                      ; 0                                              ;
-; Total DLLs                      ; 0                                              ;
-+---------------------------------+------------------------------------------------+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Thu Dec 28 11:21:32 2023       ;
+; Quartus Prime Version           ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
+; Revision Name                   ; classes                                     ;
+; Top-level Entity Name           ; ex05                                        ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 7                                           ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -166,13 +166,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                               ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                        ; Library ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------------+---------+
-; 2 practical class/ex05.vhd       ; yes             ; User VHDL File  ; C:/temp/wp-quartusII3/Project/UfpelClass/2 practical class/ex05.vhd ;         ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                    ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                             ; Library ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------+---------+
+; 2 practical class/ex05.vhd       ; yes             ; User VHDL File  ; C:/temp/wp-github/TecDigitais/2 practical class/ex05.vhd ;         ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -256,26 +256,27 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-    Info: Processing started: Sat Nov  4 16:28:47 2023
+    Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+    Info: Processing started: Thu Dec 28 11:21:23 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off classes -c classes
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file 1 practical class/ex01.vhd
-    Info (12022): Found design unit 1: ex01-arq_ex01 File: C:/temp/wp-quartusII3/Project/UfpelClass/1 practical class/ex01.vhd Line: 13
-    Info (12023): Found entity 1: ex01 File: C:/temp/wp-quartusII3/Project/UfpelClass/1 practical class/ex01.vhd Line: 4
+    Info (12022): Found design unit 1: ex01-arq_ex01 File: C:/temp/wp-github/TecDigitais/1 practical class/ex01.vhd Line: 13
+    Info (12023): Found entity 1: ex01 File: C:/temp/wp-github/TecDigitais/1 practical class/ex01.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file 1 practical class/ex02.vhd
-    Info (12022): Found design unit 1: ex02-arq_ex02 File: C:/temp/wp-quartusII3/Project/UfpelClass/1 practical class/ex02.vhd Line: 13
-    Info (12023): Found entity 1: ex02 File: C:/temp/wp-quartusII3/Project/UfpelClass/1 practical class/ex02.vhd Line: 4
+    Info (12022): Found design unit 1: ex02-arq_ex02 File: C:/temp/wp-github/TecDigitais/1 practical class/ex02.vhd Line: 13
+    Info (12023): Found entity 1: ex02 File: C:/temp/wp-github/TecDigitais/1 practical class/ex02.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file 1 practical class/ex03.vhd
-    Info (12022): Found design unit 1: ex03-arq_ex03 File: C:/temp/wp-quartusII3/Project/UfpelClass/1 practical class/ex03.vhd Line: 11
-    Info (12023): Found entity 1: ex03 File: C:/temp/wp-quartusII3/Project/UfpelClass/1 practical class/ex03.vhd Line: 4
+    Info (12022): Found design unit 1: ex03-arq_ex03 File: C:/temp/wp-github/TecDigitais/1 practical class/ex03.vhd Line: 11
+    Info (12023): Found entity 1: ex03 File: C:/temp/wp-github/TecDigitais/1 practical class/ex03.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file 1 practical class/ex04.vhd
-    Info (12022): Found design unit 1: ex04-arq_ex04 File: C:/temp/wp-quartusII3/Project/UfpelClass/1 practical class/ex04.vhd Line: 11
-    Info (12023): Found entity 1: ex04 File: C:/temp/wp-quartusII3/Project/UfpelClass/1 practical class/ex04.vhd Line: 4
+    Info (12022): Found design unit 1: ex04-arq_ex04 File: C:/temp/wp-github/TecDigitais/1 practical class/ex04.vhd Line: 11
+    Info (12023): Found entity 1: ex04 File: C:/temp/wp-github/TecDigitais/1 practical class/ex04.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file 2 practical class/ex05.vhd
-    Info (12022): Found design unit 1: ex05-arq_ex05 File: C:/temp/wp-quartusII3/Project/UfpelClass/2 practical class/ex05.vhd Line: 12
-    Info (12023): Found entity 1: ex05 File: C:/temp/wp-quartusII3/Project/UfpelClass/2 practical class/ex05.vhd Line: 4
+    Info (12022): Found design unit 1: ex05-arq_ex05 File: C:/temp/wp-github/TecDigitais/2 practical class/ex05.vhd Line: 12
+    Info (12023): Found entity 1: ex05 File: C:/temp/wp-github/TecDigitais/2 practical class/ex05.vhd Line: 4
+Info (12021): Found 0 design units, including 0 entities, in source file 2 practical class/ex06.vhd
 Info (12127): Elaborating entity "ex05" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -285,9 +286,9 @@ Info (21057): Implemented 8 device resources after synthesis - the final resourc
     Info (21059): Implemented 1 output pins
     Info (21061): Implemented 1 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4879 megabytes
-    Info: Processing ended: Sat Nov  4 16:28:56 2023
+    Info: Peak virtual memory: 4848 megabytes
+    Info: Processing ended: Thu Dec 28 11:21:32 2023
     Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:10
+    Info: Total CPU time (on all processors): 00:00:12
 
 
