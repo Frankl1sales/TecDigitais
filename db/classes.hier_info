@@ -1,16 +1,92 @@
-|ex05
-a => y.IN1
-b => y.IN1
-c => y.IN1
-d => y.IN1
-sel1 => y.IN0
-sel1 => y.IN0
-sel1 => y.IN0
-sel1 => y.IN0
-sel2 => y.IN1
-sel2 => y.IN1
-sel2 => y.IN1
-sel2 => y.IN1
-y <= y.DB_MAX_OUTPUT_PORT_TYPE
+|ex12_inaccurate_part
+x0 => ex11_inaccurate_adder:half0.a
+x1 => ex11_inaccurate_adder:half1.a
+x2 => ex11_inaccurate_adder:half2.a
+x3 => ex13_inaccurate_final_adder:half3.a
+x4 => ex14_accurate_half_adder:half4.a
+x5 => ex14_accurate_half_adder:half5.a
+x6 => ex14_accurate_half_adder:half6.a
+x7 => ex14_accurate_half_adder:half7.a
+y0 => ex11_inaccurate_adder:half0.b
+y1 => ex11_inaccurate_adder:half1.b
+y2 => ex11_inaccurate_adder:half2.b
+y3 => ex13_inaccurate_final_adder:half3.b
+y4 => ex14_accurate_half_adder:half4.b
+y5 => ex14_accurate_half_adder:half5.b
+y6 => ex14_accurate_half_adder:half6.b
+y7 => ex14_accurate_half_adder:half7.b
+s0 << ex11_inaccurate_adder:half0.sum
+s1 << ex11_inaccurate_adder:half1.sum
+s2 << ex11_inaccurate_adder:half2.sum
+s3 << ex13_inaccurate_final_adder:half3.sum
+s4 << s4.DB_MAX_OUTPUT_PORT_TYPE
+s5 << s5.DB_MAX_OUTPUT_PORT_TYPE
+s6 << s6.DB_MAX_OUTPUT_PORT_TYPE
+s7 << s7.DB_MAX_OUTPUT_PORT_TYPE
+s << comb.DB_MAX_OUTPUT_PORT_TYPE
+c_out << ex14_accurate_half_adder:half7.carry
+
+
+|ex12_inaccurate_part|ex11_inaccurate_adder:half0
+a => sum.IN0
+b => sum.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex12_inaccurate_part|ex11_inaccurate_adder:half1
+a => sum.IN0
+b => sum.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex12_inaccurate_part|ex11_inaccurate_adder:half2
+a => sum.IN0
+b => sum.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex12_inaccurate_part|ex13_inaccurate_final_adder:half3
+a => sum.IN0
+a => c_in.IN0
+b => sum.IN1
+b => c_in.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_in <= c_in.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex12_inaccurate_part|ex14_accurate_half_adder:half4
+a => sum.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex12_inaccurate_part|ex14_accurate_half_adder:half5
+a => sum.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex12_inaccurate_part|ex14_accurate_half_adder:half6
+a => sum.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex12_inaccurate_part|ex14_accurate_half_adder:half7
+a => sum.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
 
 

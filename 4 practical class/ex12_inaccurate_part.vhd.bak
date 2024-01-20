@@ -1,0 +1,28 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity ex09_full_adder is
+	port(
+		x0, x1, x2, x3	: in std_logic;	
+		y0, y1, y2, y3 : in std_logic;
+		s0, s1, s2, s3 : out std_logic;
+		s, c_out	: out std_logic
+	);
+end ex09_full_adder;
+
+architecture arch_ex09_full_adder of ex09_full_adder is
+signal tempS, tempC, tempC2: std_logic;
+
+component ex11_inaccurate_adder
+	port(
+		a,b	: in std_logic;
+		sum: out std_logic
+	);
+end component;
+
+begin
+	half0: ex11_inaccurate_adder
+		port map (a => x0, b =>y0, sum => s0);
+	half2: ex11_inaccurate_adder	
+		port map (a => x1, b =>y1, sum => s1);
+end arch_ex09_full_adder;

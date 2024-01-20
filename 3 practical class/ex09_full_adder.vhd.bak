@@ -1,0 +1,9 @@
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.all;
+
+entity ex09_full_adder is
+	port(
+		x, y, c_in : in std_logic;
+		s; c_out	: out std_logic
+	);
+end ex09_full_adder;

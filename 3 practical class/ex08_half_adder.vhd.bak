@@ -1,0 +1,16 @@
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.all;
+
+Entity ex08 is
+	port(
+		a, b : in std_logic;
+		sum, carry : out std_logic
+	);
+end ex08;
+
+architecture arch_ex08 of ex08 is 
+begin
+	sum <= a xor b;
+	carry <= a and b;
+end arch_ex08;
+	

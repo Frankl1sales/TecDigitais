@@ -7,7 +7,7 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off classes -c classes --vector_source="C:/temp/wp-github/TecDigitais/ex05.vwf" --testbench_file="C:/temp/wp-github/TecDigitais/simulation/qsim/ex05.vwf.vht"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off classes -c classes --vector_source="C:/temp/wp-github/TecDigitais/Waveform.vwf" --testbench_file="C:/temp/wp-github/TecDigitais/simulation/qsim/Waveform.vwf.vht"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -26,8 +26,8 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Thu Dec 28 22:07:17 2023
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off classes -c classes --vector_source=C:/temp/wp-github/TecDigitais/ex05.vwf --testbench_file=C:/temp/wp-github/TecDigitais/simulation/qsim/ex05.vwf.vht
+    Info: Processing started: Sun Jan 14 11:44:31 2024
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off classes -c classes --vector_source=C:/temp/wp-github/TecDigitais/Waveform.vwf --testbench_file=C:/temp/wp-github/TecDigitais/simulation/qsim/Waveform.vwf.vht
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
 Completed successfully. 
@@ -53,13 +53,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Thu Dec 28 22:07:19 2023
+    Info: Processing started: Sun Jan 14 11:44:32 2024
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/temp/wp-github/TecDigitais/simulation/qsim/ classes -c classes
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file classes.vho in folder "C:/temp/wp-github/TecDigitais/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4731 megabytes
-    Info: Processing ended: Thu Dec 28 22:07:20 2023
+    Info: Processing ended: Sun Jan 14 11:44:33 2024
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -84,7 +84,7 @@ Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
 # ** Warning: (vlib-34) Library already exists at "work".
 
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:07:21 on Dec 28,2023
+# Start time: 11:44:33 on Jan 14,2024
 # vcom -work work classes.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -94,55 +94,53 @@ Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
 # -- Loading package VITAL_Primitives
 # -- Loading package cyclonev_atom_pack
 # -- Loading package cyclonev_components
-# -- Compiling entity ex05
-# -- Compiling architecture structure of ex05
-# End time: 22:07:21 on Dec 28,2023, Elapsed time: 0:00:00
+# -- Compiling entity ex09_full_adder
+# -- Compiling architecture structure of ex09_full_adder
+# End time: 11:44:34 on Jan 14,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:07:21 on Dec 28,2023
-# vcom -work work ex05.vwf.vht 
+# Start time: 11:44:34 on Jan 14,2024
+# vcom -work work Waveform.vwf.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity ex05_vhd_vec_tst
-# -- Compiling architecture ex05_arch of ex05_vhd_vec_tst
-# End time: 22:07:21 on Dec 28,2023, Elapsed time: 0:00:00
+# -- Compiling entity ex09_full_adder_vhd_vec_tst
+# -- Compiling architecture ex09_full_adder_arch of ex09_full_adder_vhd_vec_tst
+# End time: 11:44:34 on Jan 14,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
-# vsim -novopt -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.ex05_vhd_vec_tst 
-# Start time: 22:07:21 on Dec 28,2023
+# vsim -novopt -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.ex09_full_adder_vhd_vec_tst 
+# Start time: 11:44:34 on Jan 14,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.ex05_vhd_vec_tst(ex05_arch)
+# Loading work.ex09_full_adder_vhd_vec_tst(ex09_full_adder_arch)
 # Loading altera_lnsim.altera_lnsim_components
 # Loading ieee.vital_timing(body)
 # Loading ieee.vital_primitives(body)
 # Loading cyclonev.cyclonev_atom_pack(body)
 # Loading cyclonev.cyclonev_components
-# Loading work.ex05(structure)
+# Loading work.ex09_full_adder(structure)
 # Loading ieee.std_logic_arith(body)
 # Loading cyclonev.cyclonev_io_obuf(arch)
 # Loading cyclonev.cyclonev_io_ibuf(arch)
 # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
-
 # after#32
 
-# End time: 22:07:22 on Dec 28,2023, Elapsed time: 0:00:01
+# End time: 11:44:34 on Jan 14,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading C:/temp/wp-github/TecDigitais/ex05.vwf...
+Reading C:/temp/wp-github/TecDigitais/Waveform.vwf...
 
 Reading C:/temp/wp-github/TecDigitais/simulation/qsim/classes.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/temp/wp-github/TecDigitais/simulation/qsim/classes_20231228220722.sim.vwf
+Writing the resulting VWF to C:/temp/wp-github/TecDigitais/simulation/qsim/classes_20240114114434.sim.vwf
 
 Finished VCD to VWF conversion.
 

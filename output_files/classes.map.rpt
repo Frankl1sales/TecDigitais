@@ -1,5 +1,5 @@
 Analysis & Synthesis report for classes
-Thu Dec 28 11:21:32 2023
+Thu Jan 18 11:12:33 2024
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -43,14 +43,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Dec 28 11:21:32 2023       ;
+; Analysis & Synthesis Status     ; Successful - Thu Jan 18 11:12:33 2024       ;
 ; Quartus Prime Version           ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                   ; classes                                     ;
-; Top-level Entity Name           ; ex05                                        ;
+; Top-level Entity Name           ; ex12_inaccurate_part                        ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 0                                           ;
-; Total pins                      ; 7                                           ;
+; Total pins                      ; 26                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -63,91 +63,91 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------+---------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                             ;
-+---------------------------------------------------------------------------------+--------------------+--------------------+
-; Option                                                                          ; Setting            ; Default Value      ;
-+---------------------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
-; Top-level entity name                                                           ; ex05               ; classes            ;
-; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
-; Use smart compilation                                                           ; Off                ; Off                ;
-; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
-; Enable compact report table                                                     ; Off                ; Off                ;
-; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
-; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
-; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
-; Preserve fewer node names                                                       ; On                 ; On                 ;
-; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
-; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
-; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
-; State Machine Processing                                                        ; Auto               ; Auto               ;
-; Safe State Machine                                                              ; Off                ; Off                ;
-; Extract Verilog State Machines                                                  ; On                 ; On                 ;
-; Extract VHDL State Machines                                                     ; On                 ; On                 ;
-; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
-; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
-; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
-; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
-; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
-; Parallel Synthesis                                                              ; On                 ; On                 ;
-; DSP Block Balancing                                                             ; Auto               ; Auto               ;
-; NOT Gate Push-Back                                                              ; On                 ; On                 ;
-; Power-Up Don't Care                                                             ; On                 ; On                 ;
-; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
-; Remove Duplicate Registers                                                      ; On                 ; On                 ;
-; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
-; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
-; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
-; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
-; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
-; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
-; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
-; Optimization Technique                                                          ; Balanced           ; Balanced           ;
-; Carry Chain Length                                                              ; 70                 ; 70                 ;
-; Auto Carry Chains                                                               ; On                 ; On                 ;
-; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
-; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
-; Auto ROM Replacement                                                            ; On                 ; On                 ;
-; Auto RAM Replacement                                                            ; On                 ; On                 ;
-; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
-; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
-; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
-; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
-; Strict RAM Replacement                                                          ; Off                ; Off                ;
-; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
-; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
-; Auto Resource Sharing                                                           ; Off                ; Off                ;
-; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
-; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
-; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
-; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
-; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
-; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
-; Report Parameter Settings                                                       ; On                 ; On                 ;
-; Report Source Assignments                                                       ; On                 ; On                 ;
-; Report Connectivity Checks                                                      ; On                 ; On                 ;
-; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
-; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
-; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
-; HDL message level                                                               ; Level2             ; Level2             ;
-; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
-; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
-; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
-; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
-; Clock MUX Protection                                                            ; On                 ; On                 ;
-; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
-; Block Design Naming                                                             ; Auto               ; Auto               ;
-; SDC constraint protection                                                       ; Off                ; Off                ;
-; Synthesis Effort                                                                ; Auto               ; Auto               ;
-; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
-; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
-; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
-; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
-; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
-; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
-; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
-+---------------------------------------------------------------------------------+--------------------+--------------------+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                               ;
++---------------------------------------------------------------------------------+----------------------+--------------------+
+; Option                                                                          ; Setting              ; Default Value      ;
++---------------------------------------------------------------------------------+----------------------+--------------------+
+; Device                                                                          ; 5CGXFC7C7F23C8       ;                    ;
+; Top-level entity name                                                           ; ex12_inaccurate_part ; classes            ;
+; Family name                                                                     ; Cyclone V            ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                  ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                   ; On                 ;
+; Enable compact report table                                                     ; Off                  ; Off                ;
+; Restructure Multiplexers                                                        ; Auto                 ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                  ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                  ; Off                ;
+; Preserve fewer node names                                                       ; On                   ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable               ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001         ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993            ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto                 ; Auto               ;
+; Safe State Machine                                                              ; Off                  ; Off                ;
+; Extract Verilog State Machines                                                  ; On                   ; On                 ;
+; Extract VHDL State Machines                                                     ; On                   ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                  ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000                 ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                  ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                   ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                   ; On                 ;
+; Parallel Synthesis                                                              ; On                   ; On                 ;
+; DSP Block Balancing                                                             ; Auto                 ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                   ; On                 ;
+; Power-Up Don't Care                                                             ; On                   ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                  ; Off                ;
+; Remove Duplicate Registers                                                      ; On                   ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                  ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                  ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                  ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                  ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                  ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                   ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                  ; Off                ;
+; Optimization Technique                                                          ; Balanced             ; Balanced           ;
+; Carry Chain Length                                                              ; 70                   ; 70                 ;
+; Auto Carry Chains                                                               ; On                   ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                   ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                  ; Off                ;
+; Auto ROM Replacement                                                            ; On                   ; On                 ;
+; Auto RAM Replacement                                                            ; On                   ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                   ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto                 ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto                 ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                   ; On                 ;
+; Strict RAM Replacement                                                          ; Off                  ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                   ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                  ; Off                ;
+; Auto Resource Sharing                                                           ; Off                  ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                  ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                  ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                  ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                   ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                  ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                   ; On                 ;
+; Report Parameter Settings                                                       ; On                   ; On                 ;
+; Report Source Assignments                                                       ; On                   ; On                 ;
+; Report Connectivity Checks                                                      ; On                   ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                  ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                    ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation   ; Normal compilation ;
+; HDL message level                                                               ; Level2               ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                  ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000                 ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000                 ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                  ; 100                ;
+; Clock MUX Protection                                                            ; On                   ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                  ; Off                ;
+; Block Design Naming                                                             ; Auto                 ; Auto               ;
+; SDC constraint protection                                                       ; Off                  ; Off                ;
+; Synthesis Effort                                                                ; Auto                 ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                   ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                  ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium               ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto                 ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                   ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                   ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                  ; Off                ;
++---------------------------------------------------------------------------------+----------------------+--------------------+
 
 
 +------------------------------------------+
@@ -166,49 +166,57 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                    ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                             ; Library ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------+---------+
-; 2 practical class/ex05.vhd       ; yes             ; User VHDL File  ; C:/temp/wp-github/TecDigitais/2 practical class/ex05.vhd ;         ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                            ;
++---------------------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                  ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                    ; Library ;
++---------------------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------+---------+
+; 4 practical class/ex11_inaccurate_adder.vhd       ; yes             ; User VHDL File  ; C:/temp/wp-github/TecDigitais/4 practical class/ex11_inaccurate_adder.vhd       ;         ;
+; 4 practical class/ex12_inaccurate_part.vhd        ; yes             ; User VHDL File  ; C:/temp/wp-github/TecDigitais/4 practical class/ex12_inaccurate_part.vhd        ;         ;
+; 4 practical class/ex13_inaccurate_final_adder.vhd ; yes             ; User VHDL File  ; C:/temp/wp-github/TecDigitais/4 practical class/ex13_inaccurate_final_adder.vhd ;         ;
+; 4 practical class/ex14_accurate_half_adder.vhd    ; yes             ; User VHDL File  ; C:/temp/wp-github/TecDigitais/4 practical class/ex14_accurate_half_adder.vhd    ;         ;
++---------------------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-; Estimate of Logic utilization (ALMs needed) ; 1     ;
-;                                             ;       ;
-; Combinational ALUT usage for logic          ; 1     ;
-;     -- 7 input functions                    ; 0     ;
-;     -- 6 input functions                    ; 1     ;
-;     -- 5 input functions                    ; 0     ;
-;     -- 4 input functions                    ; 0     ;
-;     -- <=3 input functions                  ; 0     ;
-;                                             ;       ;
-; Dedicated logic registers                   ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 7     ;
-;                                             ;       ;
-; Total DSP Blocks                            ; 0     ;
-;                                             ;       ;
-; Maximum fan-out node                        ; y~0   ;
-; Maximum fan-out                             ; 1     ;
-; Total fan-out                               ; 14    ;
-; Average fan-out                             ; 0.93  ;
-+---------------------------------------------+-------+
++--------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary            ;
++---------------------------------------------+----------+
+; Resource                                    ; Usage    ;
++---------------------------------------------+----------+
+; Estimate of Logic utilization (ALMs needed) ; 5        ;
+;                                             ;          ;
+; Combinational ALUT usage for logic          ; 9        ;
+;     -- 7 input functions                    ; 0        ;
+;     -- 6 input functions                    ; 0        ;
+;     -- 5 input functions                    ; 0        ;
+;     -- 4 input functions                    ; 4        ;
+;     -- <=3 input functions                  ; 5        ;
+;                                             ;          ;
+; Dedicated logic registers                   ; 0        ;
+;                                             ;          ;
+; I/O pins                                    ; 26       ;
+;                                             ;          ;
+; Total DSP Blocks                            ; 0        ;
+;                                             ;          ;
+; Maximum fan-out node                        ; x3~input ;
+; Maximum fan-out                             ; 2        ;
+; Total fan-out                               ; 61       ;
+; Average fan-out                             ; 1.00     ;
++---------------------------------------------+----------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                    ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |ex05                      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 7    ; 0            ; |ex05               ; ex05        ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                    ;
++----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------+-----------------------------+--------------+
+; Compilation Hierarchy Node             ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                     ; Entity Name                 ; Library Name ;
++----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------+-----------------------------+--------------+
+; |ex12_inaccurate_part                  ; 9 (4)               ; 0 (0)                     ; 0                 ; 0          ; 26   ; 0            ; |ex12_inaccurate_part                                   ; ex12_inaccurate_part        ; work         ;
+;    |ex11_inaccurate_adder:half0|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ex12_inaccurate_part|ex11_inaccurate_adder:half0       ; ex11_inaccurate_adder       ; work         ;
+;    |ex11_inaccurate_adder:half1|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ex12_inaccurate_part|ex11_inaccurate_adder:half1       ; ex11_inaccurate_adder       ; work         ;
+;    |ex11_inaccurate_adder:half2|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ex12_inaccurate_part|ex11_inaccurate_adder:half2       ; ex11_inaccurate_adder       ; work         ;
+;    |ex13_inaccurate_final_adder:half3| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ex12_inaccurate_part|ex13_inaccurate_final_adder:half3 ; ex13_inaccurate_final_adder ; work         ;
+;    |ex14_accurate_half_adder:half7|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ex12_inaccurate_part|ex14_accurate_half_adder:half7    ; ex14_accurate_half_adder    ; work         ;
++----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------+-----------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -232,13 +240,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 1                           ;
-;     normal            ; 1                           ;
-;         6 data inputs ; 1                           ;
-; boundary_port         ; 7                           ;
+; arriav_lcell_comb     ; 10                          ;
+;     normal            ; 10                          ;
+;         0 data inputs ; 1                           ;
+;         2 data inputs ; 5                           ;
+;         4 data inputs ; 4                           ;
+; boundary_port         ; 26                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 1.00                        ;
-; Average LUT depth     ; 1.00                        ;
+; Average LUT depth     ; 0.96                        ;
 +-----------------------+-----------------------------+
 
 
@@ -257,7 +267,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Thu Dec 28 11:21:23 2023
+    Info: Processing started: Thu Jan 18 11:12:24 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off classes -c classes
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -276,19 +286,51 @@ Info (12021): Found 2 design units, including 1 entities, in source file 1 pract
 Info (12021): Found 2 design units, including 1 entities, in source file 2 practical class/ex05.vhd
     Info (12022): Found design unit 1: ex05-arq_ex05 File: C:/temp/wp-github/TecDigitais/2 practical class/ex05.vhd Line: 12
     Info (12023): Found entity 1: ex05 File: C:/temp/wp-github/TecDigitais/2 practical class/ex05.vhd Line: 4
-Info (12021): Found 0 design units, including 0 entities, in source file 2 practical class/ex06.vhd
-Info (12127): Elaborating entity "ex05" for the top level hierarchy
+Info (12021): Found 2 design units, including 1 entities, in source file 2 practical class/ex06.vhd
+    Info (12022): Found design unit 1: ex06-arq_ex06 File: C:/temp/wp-github/TecDigitais/2 practical class/ex06.vhd Line: 11
+    Info (12023): Found entity 1: ex06 File: C:/temp/wp-github/TecDigitais/2 practical class/ex06.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file 2 practical class/ex07.vhd
+    Info (12022): Found design unit 1: ex07-arq_ex07 File: C:/temp/wp-github/TecDigitais/2 practical class/ex07.vhd Line: 11
+    Info (12023): Found entity 1: ex07 File: C:/temp/wp-github/TecDigitais/2 practical class/ex07.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file 3 practical class/ex09_full_adder.vhd
+    Info (12022): Found design unit 1: ex09_full_adder-arch_ex09_full_adder File: C:/temp/wp-github/TecDigitais/3 practical class/ex09_full_adder.vhd Line: 11
+    Info (12023): Found entity 1: ex09_full_adder File: C:/temp/wp-github/TecDigitais/3 practical class/ex09_full_adder.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file 3 practical class/ex08_half_adder.vhd
+    Info (12022): Found design unit 1: ex08_half_adder-arch_ex08_half_adder File: C:/temp/wp-github/TecDigitais/3 practical class/ex08_half_adder.vhd Line: 11
+    Info (12023): Found entity 1: ex08_half_adder File: C:/temp/wp-github/TecDigitais/3 practical class/ex08_half_adder.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file 3 practical class/ex10_inaccurate_half_adder.vhd
+    Info (12022): Found design unit 1: ex10_inaccurate_half_adder-arch_ex10_inaccurate_half_adder File: C:/temp/wp-github/TecDigitais/3 practical class/ex10_inaccurate_half_adder.vhd Line: 11
+    Info (12023): Found entity 1: ex10_inaccurate_half_adder File: C:/temp/wp-github/TecDigitais/3 practical class/ex10_inaccurate_half_adder.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file 4 practical class/ex11_inaccurate_adder.vhd
+    Info (12022): Found design unit 1: ex11_inaccurate_adder-arch_ex11_inaccurate_adder File: C:/temp/wp-github/TecDigitais/4 practical class/ex11_inaccurate_adder.vhd Line: 11
+    Info (12023): Found entity 1: ex11_inaccurate_adder File: C:/temp/wp-github/TecDigitais/4 practical class/ex11_inaccurate_adder.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file 4 practical class/ex12_inaccurate_part.vhd
+    Info (12022): Found design unit 1: ex12_inaccurate_part-arch_ex12_inaccurate_part File: C:/temp/wp-github/TecDigitais/4 practical class/ex12_inaccurate_part.vhd Line: 14
+    Info (12023): Found entity 1: ex12_inaccurate_part File: C:/temp/wp-github/TecDigitais/4 practical class/ex12_inaccurate_part.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file 4 practical class/ex13_inaccurate_final_adder.vhd
+    Info (12022): Found design unit 1: ex13_inaccurate_final_adder-arch_ex13_inaccurate_final_adder File: C:/temp/wp-github/TecDigitais/4 practical class/ex13_inaccurate_final_adder.vhd Line: 12
+    Info (12023): Found entity 1: ex13_inaccurate_final_adder File: C:/temp/wp-github/TecDigitais/4 practical class/ex13_inaccurate_final_adder.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file 4 practical class/ex14_accurate_half_adder.vhd
+    Info (12022): Found design unit 1: ex14_accurate_half_adder-arch_ex14_accurate_half_adder File: C:/temp/wp-github/TecDigitais/4 practical class/ex14_accurate_half_adder.vhd Line: 11
+    Info (12023): Found entity 1: ex14_accurate_half_adder File: C:/temp/wp-github/TecDigitais/4 practical class/ex14_accurate_half_adder.vhd Line: 4
+Info (12127): Elaborating entity "ex12_inaccurate_part" for the top level hierarchy
+Warning (10541): VHDL Signal Declaration warning at ex12_inaccurate_part.vhd(10): used implicit default value for signal "s" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/temp/wp-github/TecDigitais/4 practical class/ex12_inaccurate_part.vhd Line: 10
+Info (12128): Elaborating entity "ex11_inaccurate_adder" for hierarchy "ex11_inaccurate_adder:half0" File: C:/temp/wp-github/TecDigitais/4 practical class/ex12_inaccurate_part.vhd Line: 41
+Info (12128): Elaborating entity "ex13_inaccurate_final_adder" for hierarchy "ex13_inaccurate_final_adder:half3" File: C:/temp/wp-github/TecDigitais/4 practical class/ex12_inaccurate_part.vhd Line: 47
+Info (12128): Elaborating entity "ex14_accurate_half_adder" for hierarchy "ex14_accurate_half_adder:half4" File: C:/temp/wp-github/TecDigitais/4 practical class/ex12_inaccurate_part.vhd Line: 51
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "s" is stuck at GND File: C:/temp/wp-github/TecDigitais/4 practical class/ex12_inaccurate_part.vhd Line: 10
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 8 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 6 input pins
-    Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 1 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4848 megabytes
-    Info: Processing ended: Thu Dec 28 11:21:32 2023
+Info (21057): Implemented 35 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 16 input pins
+    Info (21059): Implemented 10 output pins
+    Info (21061): Implemented 9 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4852 megabytes
+    Info: Processing ended: Thu Jan 18 11:12:33 2024
     Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:12
+    Info: Total CPU time (on all processors): 00:00:10
 
 
